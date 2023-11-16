@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Food For Thought</string>
+    <string name="admin_login">Admin login</string>
+    <string name="Login"><u> Login</u></string>
+    <string name="Register"><u> Register </u></string>
+
+    <string name="words">We are a nationwide community dedicated to making the restaurant industry moore hospitable to everyone</string>
+    <string name="heading"><u>Catalogue</u></string>
+    <string name="heading2"><u>Profile</u></string>
+    <string name="heading3"><u>Hiring</u></string>
+    <string name="heading4"><u>Check Status</u></string>
+    <string name="heading5"><u>FeedBack</u></string>
+    <string name="heading6"><u>Log Complaint</u></string>
+    <string name="heading7"><u>Update Profile</u></string>
+    <string name="heading8"><u>Generate Report</u></string>
+    <string name="heading9"><u>View Complaints</u></string>
+    <string name="heading10"><u>Send FeedBack</u></string>
+    <string name="heading11"><u>Query Status</u></string>
+    <string name="top"><u>Welcome To Restaurant Workers Community Foundation</u></string>
+    <string name="Name"><u><u>Full Name</u></u></string>
+    <string name="Email"><u><u>Email Address</u></u></string>
+    <string name="Number"><u><u>Phone Number</u></u></string>
+    <string name="Work"><u><u>Work Place</u></u></string>
+    <string name="Change"><u><u>Change Password</u></u></string>
+    <string name="Complaint"><u><u>Complaint Details</u></u></string>
+
+
+    <string name="FullName"><u> Full Name</u></string>
+
+
+    <string name="h1"><u>Sushi and Grill</u></string>
+    <string name="h2"><u>Assign Services</u></string>
+    <string name="h3"><u>Protea Hotel Kimberley</u></string>
+    <string name="Admin"><u>Admin Home Page</u></string>
+
+
+    <string name="Link">
+        <a href="https://za.jobslin.com/job/10394/waiterwaitress-in-gauteng?utm_source=talent&amp;utm_medium=cpc&amp;utm_campaign=talent-za ">https://za.jobslin.com/job/10394/
+                waiterwaitress-in-gauteng?utm_source=talent and utm_medium=cpc and utm_campaign=talent-za</a>
+    </string>
+
+    <string name="Link2">
+   <a href="https://za.talent.com/jobs?e=1">https://za.talent.com/w/rnd-templateWhitepage
+                /?id=df3a19b7e4ba and source=api.utm_medium=a0f91111.ost=true.context=api.ib=true</a>
+    </string>
+
+    <string name="Link3">
+    <a href="https://za.talent.com/jobs?e=1">https://za.talent.com/w/rnd-templateWhitepage
+                /?id=9ab301591010.source=api.utm_medium=a0f91111.ost=true.context=api.ib=true</a>
+    </string>
+    <string name="emp_name">Emp Name</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+
+
+</resources>
