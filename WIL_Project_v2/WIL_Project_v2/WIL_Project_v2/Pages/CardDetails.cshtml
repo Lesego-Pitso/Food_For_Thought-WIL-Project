@@ -1,0 +1,131 @@
+﻿@page
+@model WIL_Project_v2.Pages.CardDetailsModel
+@{
+}
+
+
+
+
+<style>
+
+
+    .container {
+        background-color: White;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container label {
+            margin-bottom: 20px;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+            .container input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+
+    img {
+        border: 4px solid black;
+    }
+
+    p {
+        color: black;
+        font-size: 18px;
+    }
+</style>
+
+<center>
+    <nav>
+        <a href="/Index">
+            <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+        </a>
+
+    </nav>
+</center>
+
+<br />
+<br />
+
+   <center>
+        <div class="center">
+            <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos"
+                src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="650" height="180"/></a>
+                <hr style="border: 1px solid #ccc; margin: 0 15px;">
+        </div>
+</center>
+<br />
+
+<div class="container">
+            <form>
+
+                <p>Card Number</p>
+                <div class="c-number" id="c-number">
+                    <input id="number" class="cc-number" placeholder="Card number" maxlength="19" required>
+                    <i class="fa-solid fa-credit-card" style="margin: 0;"></i>
+                </div>
+
+                <div class="c-details">
+                    <div>
+                        <p>Expiry date</p>
+                        <input id="e-date" class="cc-exp" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div>
+                        <p>CVV</p>
+                        <div class="cvv-box" id="cvv-box">
+                            <input id="cvv" class="cc-cvv" placeholder="CVV" maxlength="3" required>
+                            <i class="fa-solid fa-circle-question" title="3 digits on the back of the card" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="Email">
+                    <p>Email</p>
+                    <input type="email" placeholder="example@gmail.com" id="email" required>
+                </div>
+
+            <br />
+            <br />
+            <br />
+            
+           
+        
+            </form>
+
+    <center>
+        <a href="https://secure.restaurantworkerscf.org/np/clients/restaurantworkerscf/donation.jsp?campaign=19&forwardedFromSecureDomain=1&test=true">
+            <button id="PayNow" type="submit" class="w-50 btn btn-lg btn-primary">Pay Now</button>
+        </a>
+    </center>
+        </div>
+        
+
+        
+
+
+    <script src="~/js/Card.js"></script>
+

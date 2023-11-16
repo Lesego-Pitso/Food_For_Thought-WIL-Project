@@ -1,0 +1,273 @@
+﻿@page
+@model WIL_Project_v2.Pages.GetInvovled_PageModel
+@{
+}
+
+<style>
+    img {
+        border: 5px solid black;
+    }
+    .nevbar {
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        z-index: 5;
+        display: flex;
+        background-color: transparent;
+    }
+
+    p {
+        color: white;
+        font-size: 25px;
+    }
+
+    .menu {
+        text-align: right;
+    }
+
+        .menu ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+            .menu ul li a {
+                text-decoration: none;
+                color: black;
+                margin-left: 70px;
+                font-size: 15px;
+                transition: 0.5s;
+            }
+
+            label{
+
+                color: white
+            }
+
+            h1{
+                color: white
+            }
+
+    h3 {
+        color: white
+    }
+
+    u {
+        color: white;
+    }
+
+</style>
+
+<div class="text-center">
+    <nav>
+        <a href="/Index">
+        <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+        </a>
+
+    </nav>
+
+    <br />
+    <br />
+    <br />
+
+    <button onclick="redirectToAboutUs()" style="background-color: purple; color: white; font-size: 20px;">About Us</button>
+    <button onclick="redirectToContactPage()" style="background-color: purple; color: white; font-size: 20px;">Contact Us</button>
+    <button onclick="redirectToComplaintPage()" style="background-color: purple; color: white; font-size: 20px;">Complaint Page</button>
+    <button onclick="redirectToGetInvolvedPage()" style="background-color: purple; color: white; font-size: 20px;">Get Involved</button>
+
+    <a href="https://secure.restaurantworkerscf.org/np/clients/restaurantworkerscf/donation.jsp?campaign=19&forwardedFromSecureDomain=1&test=true">
+        <button onclick="redirectToDonationPage()" style="background-color: purple; color: white; font-size: 20px;">Donation</button>
+    </a>
+
+   
+    
+
+       </div>
+   
+
+<br />
+<br />
+<br />
+<br />
+
+<body>
+
+
+    <center>
+        <u> <h1>Join Our Community!</h1></u>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <p>
+            When you join the RWCF, you don’t just get a newsletter. You get connected to a community of people
+            working to make big change in the hospitality industry. You get invitations to social networking events.
+            And, you get many opportunities to influence the direction of our movement. Join us!
+            When you add your contact information below, you will begin receiving “Restaurant
+            Workers’ Community News” in your email inbox, along with invitations to special events and occasional news about our advocacy work.
+        </p>
+
+
+    </center>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <u> <h3>Subscribe</h3> </u>
+
+
+    <form method="/Index">
+
+        <div class=" row mb-1">
+            <label class="col-sm-4 col-form-label">Email</label>
+        </div>
+        <div class="col-sm-9">
+            <input class="form-control" asp-for="Email">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <br />
+
+
+        <div class=" row mb-1">
+            <label class="col-sm-4 col-form-label">First Name</label>
+        </div>
+        <div class="col-sm-9">
+            <input class="form-control" asp-for="FirstName">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        <br />
+
+
+        <div class=" row mb-1">
+            <label class="col-sm-4 col-form-label">Last Name</label>
+        </div>
+        <div class="col-sm-9">
+            <input class="form-control" asp-for="LastName">
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        <br />
+
+
+        <div class=" row mb-1">
+            <label class="col-sm-4 col-form-label">Location</label>
+        </div>
+        <div class="col-sm-9">
+            <select class="form-select" asp-for="Subject">
+                <option value="place1"> </option>
+                <option value="place1">Johannesburg</option>
+                <option value="place2">Alberton</option>
+                <option value="place3 ">Boksburg</option>
+                <option value="place4">Sandton</option>
+            </select>
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+
+        <br />
+
+
+        <div class=" row mb-1">
+            <label class="col-sm-4 col-form-label">What's your connection to the restaurant industry?</label>
+        </div>
+        <div class="col-sm-9">
+            <select class="form-select" asp-for="Subject">
+                <option value="place1"> </option>
+                <option value="place1">Back of House</option>
+                <option value="place2">Front of House</option>
+                <option value="place3 ">Owner</option>
+                <option value="place4">Admin/Office</option>
+                <option value="place4">Diner</option>
+            </select>
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+
+        <br />
+
+        <div class=" row mb-1">
+            <label class="col-sm-4 col-form-label">What are you interested in?</label>
+        </div>
+        <div class="col-sm-9">
+            <select class="form-select" asp-for="Subject">
+                <option value="place1"> </option>
+                <option value="place1">Events</option>
+                <option value="place2">Volunteering</option>
+
+            </select>
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+
+        <br />
+
+        <div class=" row mb-1">
+            <label class="col-sm-4 col-form-label">Email Format</label>
+        </div>
+        <div class="col-sm-9">
+            <select class="form-select" asp-for="Subject">
+                <option value="place1"> </option>
+                <option value="place1">Html</option>
+                <option value="place2">Text</option>
+
+            </select>
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+
+
+        <br />
+        <br />
+        <br />
+
+
+        <div class="row">
+            <div class="col-sm-4 col-form-label" col-sm-9">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+
+
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </form>
+
+</body>
+
+<script>
+    function redirectToSignUp() {
+        // Redirect the user to the login page
+        window.location.href = '/SignUp_Page'; // Replace with the actual Razor page URL for Sign Up
+    }
+
+    function redirectToSignIn() {
+        // Redirect the user to the registration page
+        window.location.href = '/SignIn_Page'; // Replace with the actual Razor page URL for Sign In
+    }
+
+    function redirectToAboutUs() {
+        //Redirect the user to the About Us page
+        window.location.href = 'AboutUs_Page'; // Replace with the actual Razor page URL for About Us
+    }
+
+    function redirectToContactPage() {
+        //Redirect the user to the Contact Page
+        window.location.href = '/Contact_Page'; // Replace with the actual Razor page URL for Contact Us
+    }
+
+    function redirectToComplaintPage() {
+        //Redirect the user to the Complaint Page
+        window.location.href = '/Complaint_Page'; // Replace with the actual Razor Page URL for Complaint Page
+    }
+
+    function redirectToGetInvolvedPage() {
+        //Redirect the user to the Get Involved Page
+        window.location.href = '/GetInvolved_Page'; // Replace with actual Razor Page URL for Get Involved Page
+
+    }
+</script>

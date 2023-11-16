@@ -1,0 +1,213 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/WIL_Project_v2.styles.css" asp-append-version="true" />
+
+
+<style>
+    img {
+        border: 5px solid black;
+    }
+    .hero{
+        width: 100%;
+        height: 70vh;
+        background-image: linear-gradient(rgba(12.3.51.0.3),rgba(12.3.51.0.3));
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        top: 90px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 8%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    nav.logo{
+        width: 80px;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: mediumpurple;
+        font-size: 17px;
+
+    }
+    .content{
+        text-align: center;
+    }
+    .content h1{
+        font-size: 160px;
+        color: #fff;
+        font-weight: 600;
+        
+    }
+    .content a{
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        border: 2px solid;
+        border-color: mediumorchid;
+        padding: 14px 70px;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+    
+    .back-video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -10;
+    }
+    p{
+        color: white;
+        font-size: 30px;
+    }
+
+    u{
+        color: white;
+    }
+
+    
+
+    
+</style>
+
+<div class="text-center">
+<nav>
+    <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+
+
+</nav>
+
+    <br />
+    <br />
+    <br />
+    
+    <button onclick="redirectToSignUp()" style="background-color: purple; color: white; font-size: 20px;">Sign Up</button>
+    <button onclick="redirectToSignIn()" style="background-color: purple; color: white; font-size: 20px;">Sign In</button>
+    <button onclick="redirectToContactPage()" style="background-color: purple; color: white; font-size: 20px;">Contact Us</button>
+    <button onclick="redirectToComplaintPage()" style="background-color: purple; color: white; font-size: 20px;">Complaint Page</button>
+    <button onclick="redirectToGetInvolvedPage()" style="background-color: purple; color: white; font-size: 20px;">Get Involved</button>
+    <button onclick="redirectToCardDetails()" style="background-color: purple; color: white; font-size: 20px;">Card Details</button>
+
+    
+
+    
+
+
+    
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <u> <h1 style="color:white; font-size: 36px;">Welcome to the Restaurant Workers' Community Foundation</h1> </u>
+
+    <br />
+    <br />
+ 
+        <div class="hero">
+
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="/lib/Restaurant video short.mp4" type="video/mp4" >
+
+            </video>
+
+        <div class="content">
+            
+            <br />
+                <p>
+                We are a nationwide community dedicated to making the restaurant industry more hospitable to everyone.
+                By addressing quality-of-life issues that disproportionately affect restaurant workers – 40% of whom live on poverty-level wages – we hope to strengthen the workforce and increase opportunities for advancement in the industry to more people. The restaurant industry is notorious for low wages, poor job mobility, high turnover, and burnout. Structural and cultural issues within the industry decrease quality-of-life and make long term work in the industry unsustainable for many. But it doesn’t have to be that way.
+
+                That’s why we’re focused on: Wage Fairness and Career Ladders; Gender Equity and Sexual Violence; Racial Justice and Support for the Immigrant Community; Mental Health and Substance Abuse.
+
+
+            </p>
+
+            <br />
+            <br />
+            <br />
+            <a><button onclick="redirectToMissionPage()" style="background-color:purple; color: white; font-size: 20px;">Our Mission</button></a>
+
+            <a> <button onclick="redirectToAboutUs()" style="background-color: purple; color: white; font-size: 20px;">About Us</button></a>
+                
+            <script>
+                    function redirectToSignUp() {
+                        // Redirect the user to the login page
+                        window.location.href = '/SignUp_Page'; // Replace with the actual Razor page URL for Sign Up
+                    }
+
+                    function redirectToSignIn() {
+                        // Redirect the user to the registration page
+                        window.location.href = '/SignIn_Page'; // Replace with the actual Razor page URL for Sign In
+                    }
+
+                    function redirectToAboutUs() {
+                        //Redirect the user to the About Us page
+                        window.location.href = 'AboutUs_Page'; // Replace with the actual Razor page URL for About Us
+                    }
+
+                    function redirectToContactPage() {
+                        //Redirect the user to the Contact Page
+                        window.location.href = '/Contact_Page'; // Replace with the actual Razor page URL for Contact Us
+                    }
+
+                    function redirectToComplaintPage() {
+                        //Redirect the user to the Complaint Page
+                        window.location.href = '/Complaint_Page'; // Replace with the actual Razor Page URL for Complaint Page
+                    }
+
+                    function redirectToGetInvolvedPage() {
+                        //Redirect the user to the Get Involved Page
+                        window.location.href = '/GetInvolved_Page'; // Replace with actual Razor Page URL for Get Involved Page
+
+                    }
+                    function redirectToMissionPage(){
+                        //Redirect the user to the URL Mission Page
+                        window.location.href = '/MissionPage'; // Replace with actual Razor Page URL for Mission Page
+                    }
+                    function redirectToCardDetails(){
+
+                        window.location.href = '/CardDetails';
+                    }
+              
+                </script>
+            </div>
+        </div>
+
+        
+
+</div>
+  
+<br />
+<br />
+<br />
+<br />
+<br />
+
+@if (User.IsInRole("Admin"))
+{
+    <h1>Hi Admin</h1>
+}

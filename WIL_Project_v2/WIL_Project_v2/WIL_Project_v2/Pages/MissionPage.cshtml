@@ -1,0 +1,160 @@
+﻿@page
+@model WIL_Project_v2.Pages.MissionPageModel
+@{
+}
+
+
+
+<head>
+    <style>
+        img {
+            border: 5px solid black;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .nevbar {
+            width: 100%;
+            position: absolute;
+            top: 90px;
+            z-index: 5;
+            display: flex;
+            background-color: transparent;
+        }
+
+        p {
+            color: white;
+            font-size: 25px;
+        }
+
+        .menu {
+            text-align: right;
+        }
+
+            .menu ul li {
+                list-style: none;
+                display: inline-block;
+            }
+
+                .menu ul li a {
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 70px;
+                    font-size: 15px;
+                    transition: 0.5s;
+                }
+
+        label {
+            color: white
+        }
+
+        h1 {
+            color: white
+        }
+
+        h3 {
+            color: white
+        }
+
+        u {
+            color: white;
+        }
+
+   
+    </style>
+</head>
+
+<div class="text-center">
+    <nav>
+        <a href="/Index">
+            <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+        </a>
+
+    </nav>
+
+    <br />
+    <br />
+    <br />
+
+    <button onclick="redirectToAboutUs()" style="background-color: purple; color: white; font-size: 20px;">About Us</button>
+    <button onclick="redirectToContactPage()" style="background-color: purple; color: white; font-size: 20px;">Contact Us</button>
+    <button onclick="redirectToComplaintPage()" style="background-color: purple; color: white; font-size: 20px;">Complaint Page</button>
+    <button onclick="redirectToGetInvolvedPage()" style="background-color: purple; color: white; font-size: 20px;">Get Involved</button>
+
+    <a href="https://secure.restaurantworkerscf.org/np/clients/restaurantworkerscf/donation.jsp?campaign=19&forwardedFromSecureDomain=1&test=true">
+        <button onclick="redirectToDonationPage()" style="background-color: purple; color: white; font-size: 20px;">Donation</button>
+    </a>
+
+
+
+
+</div>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<body>
+    <h2>OUR VISION</h2>
+    <p>
+        Restaurant Workers’ Community Foundation envisions a hospitality industry in which employees are not costs to be minimized but essential partners in creating prosperity for all. There will be a transformation of the hospitality industry when it builds businesses based on a foundation of equity, respect, and sustainable wages (that allow all workers to pay their living expenses and save for the future) – workplaces where people of every gender, race, and immigration status are nurtured and have viable career paths toward greater fulfillment, where there is compassion and support for people experiencing mental health and substance use disorders, and where workers are free of harassment and sexual violence.
+    </p>
+
+    <h2>OUR MISSION</h2>
+    <p>
+        Restaurant Workers’ Community Foundation raises and distributes funds to grow the power of workers in public discourse and workplace policies on wages, equity, and health by engaging in:
+
+        <strong>Community-Building & Advocacy</strong>
+        We bring restaurant workers together around shared goals to generate solutions. We build networks of workers, nonprofits, and restaurants working together to change our industry’s practices. We create communications mechanisms for people and organizations in the movement to work together for sustainable wages; race, gender, and immigrant equity; and every worker’s right to quality mental health care and substance use management.
+
+        <strong>Grantmaking & Network-Building</strong>
+        We learn from and deploy funds to similarly aligned organizations across the United States. While our primary focus is on long-term structural change in the industry, when crisis calls for action, we raise funds and direct resources to emergency financial assistance and crisis services for restaurant workers.
+
+        <strong>Impact Investing</strong>
+        We use a portion of the funds we raise to invest capital that supports and grows restaurant businesses that are improving conditions for workers. We are growing a fund that will use a mix of investment strategies – direct loans to pro-worker businesses, ethically screened investment funds, and shareholder advocacy – to move the hospitality industry toward a future that is prosperous for workers and owners alike.
+    </p>
+</body>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<script>
+    function redirectToSignUp() {
+        // Redirect the user to the login page
+        window.location.href = '/SignUp_Page'; // Replace with the actual Razor page URL for Sign Up
+    }
+
+    function redirectToSignIn() {
+        // Redirect the user to the registration page
+        window.location.href = '/SignIn_Page'; // Replace with the actual Razor page URL for Sign In
+    }
+
+    function redirectToAboutUs() {
+        //Redirect the user to the About Us page
+        window.location.href = 'AboutUs_Page'; // Replace with the actual Razor page URL for About Us
+    }
+
+    function redirectToContactPage() {
+        //Redirect the user to the Contact Page
+        window.location.href = '/Contact_Page'; // Replace with the actual Razor page URL for Contact Us
+    }
+
+    function redirectToComplaintPage() {
+        //Redirect the user to the Complaint Page
+        window.location.href = '/Complaint_Page'; // Replace with the actual Razor Page URL for Complaint Page
+    }
+
+    function redirectToGetInvolvedPage() {
+        //Redirect the user to the Get Involved Page
+        window.location.href = '/GetInvolved_Page'; // Replace with actual Razor Page URL for Get Involved Page
+
+    }
+</script>

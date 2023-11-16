@@ -1,0 +1,187 @@
+﻿@page
+@model WIL_Project_v2.Pages.AboutUs_PageModel
+@{
+}
+
+<!DOCTYPE html>
+
+<head>
+    <style>
+        img {
+            border: 5px solid black;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: white
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p{
+            font-weight: bold;
+            color: white
+        }
+
+
+        .nevbar {
+            width: 100%;
+            position: absolute;
+            top: 90px;
+            z-index: 5;
+            display: flex;
+            background-color: transparent;
+        }
+
+        p {
+            color: white;
+            font-size: 25px;
+        }
+
+        .menu {
+            text-align: right;
+        }
+
+            .menu ul li {
+                list-style: none;
+                display: inline-block;
+            }
+
+                .menu ul li a {
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 70px;
+                    font-size: 15px;
+                    transition: 0.5s;
+                }
+
+        label {
+            color: white
+        }
+
+        h1 {
+            color: white
+        }
+
+        h3 {
+            color: white
+        }
+
+        u {
+            color: white;
+        }
+
+    </style>
+</head>
+
+
+<div class="text-center">
+    <nav>
+        <a href="/Index">
+            <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+        </a>
+
+    </nav>
+
+    <br />
+    <br />
+    <br />
+
+    <button onclick="redirectToAboutUs()" style="background-color: purple; color: white; font-size: 20px;">About Us</button>
+    <button onclick="redirectToContactPage()" style="background-color: purple; color: white; font-size: 20px;">Contact Us</button>
+    <button onclick="redirectToComplaintPage()" style="background-color: purple; color: white; font-size: 20px;">Complaint Page</button>
+    <button onclick="redirectToGetInvolvedPage()" style="background-color: purple; color: white; font-size: 20px;">Get Involved</button>
+
+    <a href="https://secure.restaurantworkerscf.org/np/clients/restaurantworkerscf/donation.jsp?campaign=19&forwardedFromSecureDomain=1&test=true">
+        <button onclick="redirectToDonationPage()" style="background-color: purple; color: white; font-size: 20px;">Donation</button>
+    </a>
+
+
+
+
+</div>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<body>
+    <h2><u>Meet the Board Members (Listed Alphabetically)</u></h2>
+    <h2><u>RACHEL BIEN</u></h2>
+    <h3><u>Public Policy Committee Chair</u></h3>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/037bae0e-c116-4666-987e-31ef6689e9fc/rachel_primg.jpeg?format=1500w" alt="Rachel Bien Image">
+    <p>
+        Rachel Bien is a Partner at Outten & Golden LLP in Los Angeles, California, and a Co-Chair of its Class & Collective Action Practice Group. Rachel represents employees across all industries in systemic wage and hour cases.
+        Before relocating to Los Angeles in 2016, Rachel practiced in New York City where she was involved in several class action cases on behalf of restaurant workers that helped to expose the industry’s illegal tip theft practices and ushered in greater compliance by restaurants.
+        In Los Angeles, Rachel has continued to represent workers in large-scale cases, including thousands of Lyft and Uber drivers who allege they have been unlawfully misclassified as independent contractors.
+        Rachel is deeply engaged in policy issues affecting workers and is an active member of the National Employment Law Association’s efforts to combat interpretations of the law that would scale back the rights of workers, including by the Trump Administration’s Labor Department.
+    </p>
+
+    <h2><u>JOHN DEBARY</u></h2>
+    <h3><u>Co-Founder and Board President</u></h3>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/1548878501212-VG7DQVR9XJ6DN25BZJUP/DSC_1433-2%2B%282%29.jpg?format=1500w" alt="John DeBary Image" width="600" height="600">
+    <p>
+        After nearly ten years working in New New York City’s bar and restaurant industry, John co-founded the Restaurant Workers’ Community Foundation as a means to address quality-of-life issues
+        and increase organized activism in the restaurant worker population. Starting out as a bartender at the acclaimed neo-speakeasy PDT (Please Don’t Tell) in 2008, John transitioned to working
+        for the Momofuku restaurant group serving as their corporate Bar Director until 2018.
+    </p>
+
+    <h2><u>>EDEN EGZIABHER</u></h2>
+    <p></p>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/1581301711453-M9DCGSWDL8GCYTCXYJOE/IMG-0043.jpg?format=1500w" alt="Eden Egziabher Image">
+    <p>
+        Eden Gebre Egziabher is the owner of Makina Cafe, the first Ethiopian/Eritrean food truck based in New York City. She opened her food truck in 2017 and has grabbed the attention of many foodies as well as a few press. Makina Cafe has been featured in NYTimes, Good Morning America, Time Out Magazine, NY Post, and many more. Her food truck adds diversity to the competitive NYC food scene. Prior to opening Makina Cafe, Eden worked as Director of Marketing for a hospitality group based in Brooklyn, NY. Eden holds an MBA in Marketing from Fordham University and a BS in Business Administration from USC. Eden has worked in the hospitality industry for over a decade from front of the house to handling marketing and now running her own business.
+    </p>
+
+    <h2><u>CAROLINE HATCHETT</u></h2>
+    <h3><u>Communications Committee Chair</u></h3>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/1563729655019-DMAEEN2OLWVS1I3LAR0J/image-asset.png?format=1500w" alt="Caroline Hatchett Image">
+    <p>
+        Caroline is senior editor at Plate and writes for The Washington Post, Robb Report, Food & Wine, Wine Enthusiast, Garden & Gun, and more. For the first decade of her career, she interviewed and tasted with hundreds of restaurant professionals a year, distilling trends and recognizing thought leaders in StarChefs’ Rising Stars magazine and awards series. She directed programming for the International Chefs Congress, an industry-only symposium attended by 2,000 chefs, beverage professionals, and business leaders. Caroline is a graduate of the University of Georgia and Le Cordon Bleu Paris; she has worked as a banquet prep cook and was fired from her last serving job.
+    </p>
+
+    <h2><u>MR. DANA A. KOTEEN</u></h2>
+    <h3><u>Governance Committee Chair</u></h3>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/6dfbc547-d75d-4740-8367-43c0d22c60c0/Koteen_Dana_black_shirt.jpg?format=1500w" alt="Dana A. Koteen Image" width="600" height="600">
+    <p>
+        Dana Koteen brings his passion for hospitality and industry expertise to his role as Co-Founder of MISEbox. Born out of his own frustration with inefficiencies within the restaurant industry, MISEbox's intuitive platform empowers managers to maintain and communicate consistent information about the business from a single place, creating clarity for employees, and ultimately improving work culture, daily performance, and profitability.
+    </p>
+
+    <h2><u>TIFFANY LANGSTON</u></h2>
+    <h3><u>Board Secretary</u></h3>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/2f63d927-b710-49ad-bb10-7b6aeed46fcf/TLN151107S147.jpeg?format=1500w" alt="Tiffany Langston Image" width="600" height="600">
+    <p>
+        Tiffany is a storyteller, content creator, and digital strategist with over a decade of experience at the intersection of the nonprofit and philanthropic sectors. She is currently the Communications Officer at Doris Duke Charitable Foundation and previously led marketing efforts for Good+Foundation, Nonprofit Finance Fund, WaterAid America, and Philanthropy New York, respectively. She is a James Beard-nominated writer, and in her spare time, she plays poker, figure skates and volunteers with the Human Rights Watch Film Festival, Rescuing Leftover Cuisine, and Meals on Wheels.
+    </p>
+
+    <h2><u>ZACHARY LITIF</u></h2>
+    <h3><u>Grantmaking & Nonprofit Partnerships Committee Chair</u></h3>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/1553781086927-EBCVDI1U43LZW86RDLKO/DSC_0137.jpg?format=1500w" alt="Zachary Litif Image" width="600" height="600">
+    <p>
+        Zachary is currently working as an in-house consultant with Support Center for Nonprofit Management to launch their new Organizational Navigator Program. Over the past two years, Zach has transitioned his career from intellectual property litigation, at Pepper Hamilton LLP, in Boston, MA, to focusing on capacity building and program development within the nonprofit and government sectors. Zach returned to New York City in August 2017, after a transamerica bicycle trip to participate in the Coro Fellowship. Since returning to NYC, Zach has consulted for the Department of Design and Construction, building a Virtual Reality Program for the STEAM High School Summer Internship Program; worked with Restaurant Opportunities Center of New York, reestablishing the One Fair Wage Coalition and aiding research into after-hours childcare; and the Robert Sterling Clark Foundation to design an automated resource directory for Leadership Development programs available to New Yorkers.
+    </p>
+
+    <h2><u>LYNNETTE MARRERO</u></h2>
+    <p></p>
+    <img src="https://images.squarespace-cdn.com/content/v1/59662b252cba5e23f7a00ffc/87665a5b-4a11-4c88-b2d8-8ac7e60b433f/Article-Lynnette-Marrero-Bartender-Llama-Inn-Williamsburg-Brooklyn.jpeg?format=1500w" alt="Lynnette Marrero Image" width="600" height="100">
+    <p>
+        Over the past 17 years, Lynnette Marrero has cultivated a new generation of cocktail bartenders and elevated the level of craft of mixology at internationally renowned bars and restaurants and as a consultant for brands and top spirit’s and beverage companies with her company DrinksAt6. She is currently the Bar Director for Llama Inn, Brooklyn, NY.
+        Lynnette is the President LUPEC NYC an organization to promote women bartenders while raising funds for women’s based charities. She co-created and produced Speed Rack, a global cocktail competition for women bartenders that raises money for breast cancer related charities. Marrero has judged the renowned Global Cocktail Competitions, presented industry seminars at International cocktail festivals, was the 2016 Ambassador of the Chile Cocktail Week. She was an inaugural Honoree at the Dames hall of Fame at Tales of the cocktail, and in 2009 Marrero was honored by the James Beard Awards as one of America’s Leading Female Mixologists. Marrero was named Food and Wine with Fortune Magazine’s Most Innovative Women in Food and Drink 2015 and recently named Wine Enthusiast's Mixologist/Brand Ambassador of the year 2016.
+    </p>
+</body>
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+

@@ -1,0 +1,199 @@
+﻿@page
+@model WIL_Project_v2.Pages.Complaint_PageModel
+@{
+}
+
+
+<style>
+     img {
+        border: 5px solid black;
+    }
+
+
+     label{
+
+                color: white
+            }
+
+            h2{
+
+color: white
+            }
+
+</style>
+
+<div class="text-center">
+    <nav>
+        <a href="/Index">
+            <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+        </a>
+
+    </nav>
+
+    <br />
+    <br />
+    <br />
+
+    <button onclick="redirectToAboutUs()" style="background-color: purple; color: white; font-size: 20px;">About Us</button>
+    <button onclick="redirectToContactPage()" style="background-color: purple; color: white; font-size: 20px;">Contact Us</button>
+    <button onclick="redirectToComplaintPage()" style="background-color: purple; color: white; font-size: 20px;">Complaint Page</button>
+    <button onclick="redirectToGetInvolvedPage()" style="background-color: purple; color: white; font-size: 20px;">Get Involved</button>
+
+    <a href="https://secure.restaurantworkerscf.org/np/clients/restaurantworkerscf/donation.jsp?campaign=19&forwardedFromSecureDomain=1&test=true">
+        <button onclick="redirectToDonationPage()" style="background-color: purple; color: white; font-size: 20px;">Donation</button>
+    </a>
+
+
+
+
+</div>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<div class="row">
+    <div class="col-lg-9 mx-0 auto mx-auto rounded border p-3">
+        <h2 class="text-center mb-5">Complaint form </h2 co>
+
+        @if (Model.errorMessage.Length > 0)
+        {
+            <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                <strong>@Model.errorMessage</strong>
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label="Close"></button>
+            </div>
+        }
+        else if (Model.successMessage.Length > 0)
+        {
+            <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                <strong>@Model.successMessage</strong>
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label="Close"></button>
+            </div>
+
+        }
+
+        <form action="https://formspree.io/f/xoqobrkv" method="POST">
+
+            
+            <div class=" row mb-3">
+                <label class="col-sm-4 col-form-label">Stay Anonymous</label>
+                <div class="col-sm-8">
+                    <select class="form-select" asp-for="Subject">
+                        <option value="No">No. </option>
+                         <option value="Yes">Yes they is no need to enter your first name and Last name if you choose to stay anonymou</option>
+                    </select>
+                    <span asp-validation-for="Subject" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class=" row mb-3">
+                <label class="col-sm-4 col-form-label">First Name</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="FirstName"  >
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+
+            
+            <div class=" row mb-3">
+                <label class="col-sm-4 col-form-label">Last Name</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="LastName" >
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class=" row mb-3">
+                <label class="col-sm-4 col-form-label">Email</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Email" required>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class=" row mb-3">
+                <label class="col-sm-4 col-form-label">Phone Number</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="PhoneNumber" required>
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+
+
+            <div class=" row mb-3">
+                <label class="col-sm-4 col-form-label">Subject</label>
+                <div class="col-sm-8">
+                    <select class="form-select" asp-for="Subject">
+                        <option value="Complaint about another employee">Complaint about another employee</option>
+                        <option value="About Machinery in restaurant">About Machinery in restaurant</option>
+                        <option value="About shop health condition ">About shop health condition</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span asp-validation-for="Subject" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class=" row mb-3">
+                <label class="col-sm-4 col-form-label">Message</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" asp-for="Message"><</textarea>
+                    <span asp-validation-for="Message" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="offset-sm-4" col-sm-8">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<script>
+    function redirectToSignUp() {
+        // Redirect the user to the login page
+        window.location.href = '/SignUp_Page'; // Replace with the actual Razor page URL for Sign Up
+    }
+
+    function redirectToSignIn() {
+        // Redirect the user to the registration page
+        window.location.href = '/SignIn_Page'; // Replace with the actual Razor page URL for Sign In
+    }
+
+    function redirectToAboutUs() {
+        //Redirect the user to the About Us page
+        window.location.href = 'AboutUs_Page'; // Replace with the actual Razor page URL for About Us
+    }
+
+    function redirectToContactPage() {
+        //Redirect the user to the Contact Page
+        window.location.href = '/Contact_Page'; // Replace with the actual Razor page URL for Contact Us
+    }
+
+    function redirectToComplaintPage() {
+        //Redirect the user to the Complaint Page
+        window.location.href = '/Complaint_Page'; // Replace with the actual Razor Page URL for Complaint Page
+    }
+
+    function redirectToGetInvolvedPage() {
+        //Redirect the user to the Get Involved Page
+        window.location.href = '/GetInvolved_Page'; // Replace with actual Razor Page URL for Get Involved Page
+
+    }
+</script>

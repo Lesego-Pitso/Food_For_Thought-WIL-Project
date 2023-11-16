@@ -1,0 +1,101 @@
+﻿@page
+@model WIL_Project_v2.Pages.SignIn_PageModel
+@{
+    ViewData["Title"] = "Sign In Page";
+}
+
+
+    <style>
+
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+            .container h2 {
+                text-align: center;
+            }
+
+            .container form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container label {
+                margin-bottom: 8px;
+            }
+
+            .container input[type="text"],
+            .container input[type="password"] {
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .container input[type="submit"] {
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+                .container input[type="submit"]:hover {
+                    background-color: #0056b3;
+                }
+
+    img {
+        border: 5px solid black;
+    }
+    </style>
+<center>
+    <nav>
+        <a href="/Index">
+            <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+        </a>
+
+    </nav>
+</center>
+
+<br />
+<br />
+
+   
+    <div class="container">
+        <h2>Login</h2>
+
+        <br />
+    <form action="https://formsubmit.co/827c8ccda08b1851c8d4787ba0e56fec" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Sign In</button>
+        
+        </form>
+
+
+       
+    </div>
+
+
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

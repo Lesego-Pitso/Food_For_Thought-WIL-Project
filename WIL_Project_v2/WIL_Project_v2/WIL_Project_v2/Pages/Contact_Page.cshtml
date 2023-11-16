@@ -1,0 +1,189 @@
+﻿@page
+@model WIL_Project_v2.Pages.Contact_PageModel
+@{
+}
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<style>
+    img {
+        border: 5px solid black;
+    }
+    .a.ion-icon {
+        font-size: 64px;
+    }
+
+    h1 {
+        color: white
+    }
+
+    h2 {
+        color: white
+    }
+
+    u {
+        color: white;
+    }
+</style>
+
+
+
+<<div class="text-center">
+    <nav>
+        <a href="/Index">
+            <img src="/lib/RWCF logo.jpg" class="logo" width="200" height="200" />
+        </a>
+
+    </nav>
+
+    <br />
+    <br />
+    <br />
+
+    <button onclick="redirectToAboutUs()" style="background-color: purple; color: white; font-size: 20px;">About Us</button>
+    <button onclick="redirectToContactPage()" style="background-color: purple; color: white; font-size: 20px;">Contact Us</button>
+    <button onclick="redirectToComplaintPage()" style="background-color: purple; color: white; font-size: 20px;">Complaint Page</button>
+    <button onclick="redirectToGetInvolvedPage()" style="background-color: purple; color: white; font-size: 20px;">Get Involved</button>
+
+    <a href="https://secure.restaurantworkerscf.org/np/clients/restaurantworkerscf/donation.jsp?campaign=19&forwardedFromSecureDomain=1&test=true">
+        <button onclick="redirectToDonationPage()" style="background-color: purple; color: white; font-size: 20px;">Donation</button>
+    </a>
+
+
+
+
+</div>
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+<body>
+
+
+        <center>
+        <u> <h1> Contact Us:</h1> </u>
+
+        <br />
+        <br />
+
+       <u> <h2>
+            You may contact via Email:
+        </h2></u>
+       
+    </center>
+
+    <br />
+    <br />
+
+
+   
+        <img src="/lib/gmail.png" class="logo" width="50" height="50" />
+   
+    <br />
+    <u>
+        <h3>
+        Email Address: info@RestaurantWorkersCF.org
+    </h3>
+    </u>
+
+   
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <center>
+   <u><h2>
+        Other Socail platforms:
+            </h2>
+        </u>
+
+        <br />
+        <br />
+    </center>
+
+    <br />
+
+    <a href="https://www.facebook.com/RWCFUSA">
+        <img src="/lib/facebook.png" class="logo" width="50" height="50" />
+    </a>
+        <u>
+            <h3>
+        Facebook: Restaurant Workers Community Foundation
+        </h3></u>
+        <br />
+
+
+    <a href="https://x.com/RWCFUSA?t=jAjY1XMauIbCt9q3jNLW4g&s=08">
+        <img src="/lib/twitter.png" class="logo" width="50" height="50" />
+    </a>
+
+    <br />
+            <u>
+                <h3>
+        Twitter:Restaurant Workers’ Community Foundation  
+        </h3> </u>
+
+    <br />
+
+    <a href="https://www.instagram.com/rwcfusa/">
+        <img src="/lib/instagram.png" class="logo" width="50" height="50" />
+    </a>
+    <br />
+    <u>
+       <h3>
+            Instagram: Restaurant Workers' Community Foundation
+        </h3></u>
+    <br />
+
+ 
+
+</body>
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<script>
+    function redirectToSignUp() {
+        // Redirect the user to the login page
+        window.location.href = '/SignUp_Page'; // Replace with the actual Razor page URL for Sign Up
+    }
+
+    function redirectToSignIn() {
+        // Redirect the user to the registration page
+        window.location.href = '/SignIn_Page'; // Replace with the actual Razor page URL for Sign In
+    }
+
+    function redirectToAboutUs() {
+        //Redirect the user to the About Us page
+        window.location.href = 'AboutUs_Page'; // Replace with the actual Razor page URL for About Us
+    }
+
+    function redirectToContactPage() {
+        //Redirect the user to the Contact Page
+        window.location.href = '/Contact_Page'; // Replace with the actual Razor page URL for Contact Us
+    }
+
+    function redirectToComplaintPage() {
+        //Redirect the user to the Complaint Page
+        window.location.href = '/Complaint_Page'; // Replace with the actual Razor Page URL for Complaint Page
+    }
+
+    function redirectToGetInvolvedPage() {
+        //Redirect the user to the Get Involved Page
+        window.location.href = '/GetInvolved_Page'; // Replace with actual Razor Page URL for Get Involved Page
+
+    }
+</script>
