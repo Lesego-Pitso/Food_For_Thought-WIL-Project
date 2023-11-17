@@ -16,7 +16,7 @@ namespace WIL_Project_v2.Pages
     {
 
 
-
+        //This is the sign up page:
         [BindProperty]
         [Required(ErrorMessage = "The First Name is required")]
         public string FirstName { get; set; } = "";
