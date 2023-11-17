@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WIL_Project_v2",
+    "\\WIL_Project_v2\\WIL_Project_v2",
+    "\\WIL_Project_v2\\WIL_Project_v2\\WIL_Project_v2",
+    "\\WIL_Project_v2\\WIL_Project_v2\\WIL_Project_v2\\Pages"
   ],
+  "SelectedNode": "\\WIL_Project_v2\\WIL_Project_v2\\WIL_Project_v2\\Pages\\SignUp_Page.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }
